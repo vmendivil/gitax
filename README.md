@@ -11,7 +11,7 @@ Visit creator's repo for more information about this solution.
     1) Fork and clone repo
     2) Create a new Ax model named Gitax based on definition under gitax folder
     3) Copy LibGit2Sharp dlls from LibGit2Sharp folder into Ax client bin folder
-        a. If needed, new dlls might be generated from [LibGit2Sharp](https://github.com/libgit2/libgit2sharp) repo
+        a. If needed, new dlls might be generated from LibGit2Sharp repo
     4) Run CombineXpos.bat and CombineXposIntoOne.bat scripts under Build 
     5) Import xpo into Ax
     6) Create new solution in Visual Studio, import VS project GTXLibGit2Sharp, build, add project to Ax and deploy
