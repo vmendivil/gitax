@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <VCSParameters>
-  <Project value="1.1.3.0" />
+  <Project value="Gitax" />
   <BestPractice>
     <AcceptCompileErrors value="Yes" />
     <AcceptCompileWarnings value="Yes" />
@@ -9,9 +9,6 @@
     <RunTitleCaseUpdate value="No" />
     <CheckInTestProject value="" />
   </BestPractice>
-  <LabelFile>
-    <DefaultLabelFile value="" />
-  </LabelFile>
   <UnwantedObjectTypes />
   <UnwantedObjectNames>
     <ObjectName value="&lt;\_" />
@@ -38,7 +35,7 @@
   </UnwantedObjectNames>
   <AdditionalFolders />
   <Models>
-    <Model folder="gitax" description="Gitax" aldlocation="" />
+    <Model folder="Gitax" description="Gitax" />
   </Models>
   <PluginSettings />
 </VCSParameters>

@@ -1,0 +1,45 @@
+setlocal
+@echo off
+set enlistment="..\Gitax"
+set targetDir="C:\Test\AX\GitXpos\ByType"
+@echo on
+
+REM D:
+REM cd "D:\Program Files\Microsoft Dynamics AX\60\ManagementUtilities"
+
+CombineXPOs.exe -XpoDir "%enlistment%\Classes" -CombinedXpoFile "%targetDir%\Classes.xpo" -Verbose > "%targetDir%\Classes.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Data Dictionary\Base Enums" -CombinedXpoFile "%targetDir%\Base Enums.xpo" -Verbose > "%targetDir%\Base Enums.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Data Dictionary\Extended Data Types" -CombinedXpoFile "%targetDir%\Extended Data Types.xpo" -Verbose > "%targetDir%\Extended Data Types.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Data Dictionary\Maps" -CombinedXpoFile "%targetDir%\Maps.xpo" -Verbose > "%targetDir%\Maps.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Data Dictionary\Tables" -CombinedXpoFile "%targetDir%\Tables.xpo" -Verbose > "%targetDir%\Tables.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Data Dictionary\Views" -CombinedXpoFile "%targetDir%\Views.xpo" -Verbose > "%targetDir%\Views.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Forms" -CombinedXpoFile "%targetDir%\Forms.xpo" -Verbose > "%targetDir%\Forms.txt"
+REM CombineXPOs.exe -XpoDir "%enlistment%\label files" -CombinedXpoFile "%targetDir%\label files.xpo" -Verbose > "%targetDir%\label files.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Macros" -CombinedXpoFile "%targetDir%\Macros.xpo" -Verbose > "%targetDir%\Macros.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Menu Items\Action" -CombinedXpoFile "%targetDir%\Action.xpo" -Verbose > "%targetDir%\Action.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Menu Items\Display" -CombinedXpoFile "%targetDir%\Display.xpo" -Verbose > "%targetDir%\Display.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Menu Items\Output" -CombinedXpoFile "%targetDir%\Output.xpo" -Verbose > "%targetDir%\Output.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Menus" -CombinedXpoFile "%targetDir%\Menus.xpo" -Verbose > "%targetDir%\Menus.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Parts\Form Parts" -CombinedXpoFile "%targetDir%\Form Parts.xpo" -Verbose > "%targetDir%\Form Parts.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Parts\Info Parts" -CombinedXpoFile "%targetDir%\Info Parts.xpo" -Verbose > "%targetDir%\Info Parts.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Projects\Shared" -CombinedXpoFile "%targetDir%\Projects Shared.xpo" -Verbose > "%targetDir%\Projects Shared.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Queries" -CombinedXpoFile "%targetDir%\Queries.xpo" -Verbose > "%targetDir%\Queries.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\References" -CombinedXpoFile "%targetDir%\References.xpo" -Verbose > "%targetDir%\References.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Reports" -CombinedXpoFile "%targetDir%\Reports.xpo" -Verbose > "%targetDir%\Reports.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Resources" -CombinedXpoFile "%targetDir%\Resources.xpo" -Verbose > "%targetDir%\Resources.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Security\Code Permissions" -CombinedXpoFile "%targetDir%\Code Permissions.xpo" -Verbose > "%targetDir%\Code Permissions.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Security\Duties" -CombinedXpoFile "%targetDir%\Duties.xpo" -Verbose > "%targetDir%\Duties.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Security\Privileges" -CombinedXpoFile "%targetDir%\Privileges.xpo" -Verbose > "%targetDir%\Privileges.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Security\Process Cycles" -CombinedXpoFile "%targetDir%\Process Cycles.xpo" -Verbose > "%targetDir%\Process Cycles.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Security\Roles" -CombinedXpoFile "%targetDir%\Roles.xpo" -Verbose > "%targetDir%\Roles.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Service Groups" -CombinedXpoFile "%targetDir%\Service Groups.xpo" -Verbose > "%targetDir%\Service Groups.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Services" -CombinedXpoFile "%targetDir%\Services.xpo" -Verbose > "%targetDir%\Services.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\SSRS Reports\Reports" -CombinedXpoFile "%targetDir%\SSRS Reports.xpo" -Verbose > "%targetDir%\SSRS Reports.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Web\Web Menu Items\Actions" -CombinedXpoFile "%targetDir%\Web Actions.xpo" -Verbose > "%targetDir%\Web Actions.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Workflow\Approvals" -CombinedXpoFile "%targetDir%\Approvals.xpo" -Verbose > "%targetDir%\Approvals.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Workflow\Providers\Participant Assignment" -CombinedXpoFile "%targetDir%\Participant Assignment.xpo" -Verbose > "%targetDir%\Participant Assignment.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Workflow\Tasks" -CombinedXpoFile "%targetDir%\Tasks.xpo" -Verbose > "%targetDir%\Tasks.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Workflow\Workflow Categories" -CombinedXpoFile "%targetDir%\Workflow Categories.xpo" -Verbose > "%targetDir%\Workflow Categories.txt"
+CombineXPOs.exe -XpoDir "%enlistment%\Workflow\Workflow Types" -CombinedXpoFile "%targetDir%\Workflow Types.xpo" -Verbose > "%targetDir%\Workflow Types.txt"
+
+endlocal

@@ -67,8 +67,9 @@
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LibGit2Sharp, Version=0.22.0.0, Culture=neutral, PublicKeyToken=7cbde695407f0333, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\LibGit2Sharp.dll</HintPath>
+    <Reference Include="LibGit2Sharp, Version=0.21.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\LibGit2Sharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -83,6 +84,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AXProxy Include="Enum.GTXFileStatus.axproxy">
+      <Generator>MSBuild:Compile</Generator>
+    </AXProxy>
     <AXProxy Include="Table.SysVersionControlTmpItem.axproxy">
       <Generator>MSBuild:Compile</Generator>
     </AXProxy>
